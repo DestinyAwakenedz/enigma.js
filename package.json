@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "aws-sdk": "^2.275.1",
     "discord.js": "^11.3.2",
     "discord.js-commando": "^0.10.0",
     "ffmpeg-binaries": "^4.0.0",

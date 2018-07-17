@@ -15,7 +15,7 @@ module.exports = function(bot){
             if(!valid) return message.channel.send("Please put a valid url.")
             let info = await ytdl.getInfo(args);
             const connection = await message.member.voiceChannel.join();
-            const dispatcher = connection.playArbitraryInput(ytdl(args,{filter: 'audioonly'})).catch(console.log(error));
+            const dispatcher = connection.playArbitraryInput(ytdl(args,{filter: 'audioonly'}));
             message.channel.send("Now playing:\n"+info.title)
         }
     })
